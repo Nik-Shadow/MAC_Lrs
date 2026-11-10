@@ -1,0 +1,10 @@
+flowchart TD
+    D((D: диспетчер)) <-->|CFP / PROPOSE / ASSIGN / ACK / INFORM| A1((A1))
+    D <-->|CFP / PROPOSE / ASSIGN / ACK / INFORM| A2((A2))
+    D <-->|CFP / PROPOSE / ASSIGN / ACK / INFORM| A3((A3))
+    D <-->|CFP / PROPOSE / ASSIGN / ACK / INFORM| A4((A4))
+    A1 <-->|BID / OFFER / COUNTER / GRANT| G((GPU))
+    A2 <-->|BID / OFFER / COUNTER / GRANT| G
+    A3 <-->|BID / OFFER / COUNTER / GRANT| G
+    A4 <-->|BID / OFFER / COUNTER / GRANT| G
+    M((Monitor)) <-->|Heartbeat / Timeout / Failover| D

@@ -1,0 +1,10 @@
+digraph Communication {
+  graph [rankdir=LR, fontname="DejaVu Sans", bgcolor="white", pad=0.3];
+  node [shape=circle, fontname="DejaVu Sans", fontsize=13, width=0.8];
+  D; A1; A2; A3; A4; GPU; Monitor;
+  D -> {A1 A2 A3 A4} [label="CFP/ASSIGN", fontsize=10];
+  {A1 A2 A3 A4} -> D [label="PROPOSE/ACK/INFORM", fontsize=10];
+  {A1 A2 A3 A4} -> GPU [label="BID/COUNTER", fontsize=10];
+  GPU -> {A1 A2 A3 A4} [label="OFFER/GRANT", fontsize=10];
+  Monitor -> D [label="TIMEOUT/FAILOVER", fontsize=10];
+}

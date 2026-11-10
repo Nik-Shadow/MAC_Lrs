@@ -1,0 +1,17 @@
+digraph Roles {
+  graph [rankdir=LR, fontname="DejaVu Sans", bgcolor="white", pad=0.3];
+  node [shape=box, style="rounded", fontname="DejaVu Sans", fontsize=11];
+  U [label="Постановщик задач"];
+  D [label="Диспетчер\n(назначение)"];
+  A1 [label="Исполнитель A1\nтекст"];
+  A2 [label="Исполнитель A2\nизображения"];
+  A3 [label="Исполнитель A3\nданные"];
+  A4 [label="Исполнитель A4\nуниверсальный"];
+  G [label="Агент GPU\n(переговоры)"];
+  M [label="Монитор\n(контроль)"];
+  U -> D;
+  D -> {A1 A2 A3 A4};
+  {A1 A2 A3 A4} -> G;
+  {A1 A2 A3 A4} -> M [style=dashed];
+  M -> D [label="FAILOVER"];
+}

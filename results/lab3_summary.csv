@@ -1,0 +1,3 @@
+﻿method,trials,demand,completed,throughput_pct,conflict_slots,occupied_slots,utilization_pct,jain_fairness,messages,coordination_cost
+naive,20,37,8.95,24.189,18.25,8.95,29.833,0.747,62.95,3.147
+negotiation,20,37,30,81.081,0,30,100.0,0.982,447.1,22.355

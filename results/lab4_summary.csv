@@ -1,0 +1,9 @@
+﻿scenario,protection,trials,tasks,true_completed,true_completion_pct,unfinished_or_false,false_accepted,rejected_invalid,retries,messages,mean_complete_time
+message_loss,off,20,28,15.6,55.714,12.4,0,0,0,295.6,11.819
+message_loss,on,20,28,28,100.0,0,0,0,23.1,562.1,19.139
+worker_crash,off,20,28,21.75,77.679,6.25,0,0,0,302.75,17.939
+worker_crash,on,20,28,27.55,98.393,0.45,0,0,6.25,364.8,23.298
+tampered_bid,off,20,28,7.9,28.214,20.1,0,0,0,287.9,30.078
+tampered_bid,on,20,28,27.75,99.107,0.25,0,28,0,335.75,26.422
+forged_completion,off,20,28,22,78.571,6,6,0,0,308,16.709
+forged_completion,on,20,28,28,100.0,0,0,6,0,320,18.654

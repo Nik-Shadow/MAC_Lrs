@@ -1,0 +1,170 @@
+{
+  "lab2": [
+    {
+      "method": "central",
+      "trials": 20,
+      "tasks": 48,
+      "makespan": 78.75,
+      "mean_flow_time": 19.145,
+      "max_flow_time": 46,
+      "late_tasks": 16.75,
+      "late_pct": 34.896,
+      "messages": 96,
+      "coordination_cost": 4.8
+    },
+    {
+      "method": "cnp",
+      "trials": 20,
+      "tasks": 48,
+      "makespan": 62.65,
+      "mean_flow_time": 15.828,
+      "max_flow_time": 29.5,
+      "late_tasks": 9.75,
+      "late_pct": 20.312,
+      "messages": 624,
+      "coordination_cost": 31.2
+    }
+  ],
+  "lab3": [
+    {
+      "method": "naive",
+      "trials": 20,
+      "demand": 37,
+      "completed": 8.95,
+      "throughput_pct": 24.189,
+      "conflict_slots": 18.25,
+      "occupied_slots": 8.95,
+      "utilization_pct": 29.833,
+      "jain_fairness": 0.747,
+      "messages": 62.95,
+      "coordination_cost": 3.147
+    },
+    {
+      "method": "negotiation",
+      "trials": 20,
+      "demand": 37,
+      "completed": 30,
+      "throughput_pct": 81.081,
+      "conflict_slots": 0,
+      "occupied_slots": 30,
+      "utilization_pct": 100.0,
+      "jain_fairness": 0.982,
+      "messages": 447.1,
+      "coordination_cost": 22.355
+    }
+  ],
+  "lab4": [
+    {
+      "scenario": "message_loss",
+      "protection": "off",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 15.6,
+      "true_completion_pct": 55.714,
+      "unfinished_or_false": 12.4,
+      "false_accepted": 0,
+      "rejected_invalid": 0,
+      "retries": 0,
+      "messages": 295.6,
+      "mean_complete_time": 11.819
+    },
+    {
+      "scenario": "message_loss",
+      "protection": "on",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 28,
+      "true_completion_pct": 100.0,
+      "unfinished_or_false": 0,
+      "false_accepted": 0,
+      "rejected_invalid": 0,
+      "retries": 23.1,
+      "messages": 562.1,
+      "mean_complete_time": 19.139
+    },
+    {
+      "scenario": "worker_crash",
+      "protection": "off",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 21.75,
+      "true_completion_pct": 77.679,
+      "unfinished_or_false": 6.25,
+      "false_accepted": 0,
+      "rejected_invalid": 0,
+      "retries": 0,
+      "messages": 302.75,
+      "mean_complete_time": 17.939
+    },
+    {
+      "scenario": "worker_crash",
+      "protection": "on",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 27.55,
+      "true_completion_pct": 98.393,
+      "unfinished_or_false": 0.45,
+      "false_accepted": 0,
+      "rejected_invalid": 0,
+      "retries": 6.25,
+      "messages": 364.8,
+      "mean_complete_time": 23.298
+    },
+    {
+      "scenario": "tampered_bid",
+      "protection": "off",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 7.9,
+      "true_completion_pct": 28.214,
+      "unfinished_or_false": 20.1,
+      "false_accepted": 0,
+      "rejected_invalid": 0,
+      "retries": 0,
+      "messages": 287.9,
+      "mean_complete_time": 30.078
+    },
+    {
+      "scenario": "tampered_bid",
+      "protection": "on",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 27.75,
+      "true_completion_pct": 99.107,
+      "unfinished_or_false": 0.25,
+      "false_accepted": 0,
+      "rejected_invalid": 28,
+      "retries": 0,
+      "messages": 335.75,
+      "mean_complete_time": 26.422
+    },
+    {
+      "scenario": "forged_completion",
+      "protection": "off",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 22,
+      "true_completion_pct": 78.571,
+      "unfinished_or_false": 6,
+      "false_accepted": 6,
+      "rejected_invalid": 0,
+      "retries": 0,
+      "messages": 308,
+      "mean_complete_time": 16.709
+    },
+    {
+      "scenario": "forged_completion",
+      "protection": "on",
+      "trials": 20,
+      "tasks": 28,
+      "true_completed": 28,
+      "true_completion_pct": 100.0,
+      "unfinished_or_false": 0,
+      "false_accepted": 0,
+      "rejected_invalid": 6,
+      "retries": 0,
+      "messages": 320,
+      "mean_complete_time": 18.654
+    }
+  ]
+}
